@@ -15,7 +15,7 @@
   const b = Number(prompt('Entrez un nombre : '));
 
   if( isNaN(a) || isNaN(b)) {
-    alert('Entrez des nombres !')
+    alert('Entrez des nombres !');
   } else {
     alert(`Bonjour, ${ a + b } !`);
   }
