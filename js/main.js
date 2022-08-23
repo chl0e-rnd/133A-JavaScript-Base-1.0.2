@@ -5,12 +5,19 @@
  * @since   2019-08-22
  */
 
-(function main() {
-  'use strict'; // Demande une interprétation stricte du code
 
-    let a = 'Bonjour';
-    let b = 'toto';
+'use strict'; // Demande une interprétation stricte du code
 
-    console.log(a, b);
-}()); // Main IIFE
+  //let a = 'Bonjour';
+  //let b = 'toto';
+
+  const a = Number(prompt('Entrez un nombre : '));
+  const b = Number(prompt('Entrez un nombre : '));
+
+  if( isNaN(a) || isNaN(b)) {
+    alert('Entrez des nombres !')
+  } else {
+    alert(`Bonjour, ${ a + b } !`);
+  }
+  console.log(a, b);
 
